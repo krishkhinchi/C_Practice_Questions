@@ -1,3 +1,10 @@
+/*
+1234
+1234
+1234
+1234
+*/
+
 #include<stdio.h>
 void main(){
 int user,i,j;
