@@ -10,11 +10,9 @@ void main(){
 int user,i,j;
 printf("Enter a number: ");
 scanf("%d",&user);
-for(i=0;i<user;i++){
-    int a=1;
-    for(j=0;j<user;j++){
-        printf("%d",a);
-        a++;
+for(i=1;i<=user;i++){
+    for(j=1;j<=user;j++){
+        printf("%d",j);
     }
     printf("\n");
 }
