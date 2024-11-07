@@ -16,7 +16,7 @@ temp=no1;
 no1=no2;
 no2=temp;
 
-printf("Number 1 is = %d\n",no1);
-printf("Number 2 is = %d\n",no2);
+printf("Number 1 is %d\n",no1);
+printf("Number 2 is %d\n",no2);
 getch();
 }
