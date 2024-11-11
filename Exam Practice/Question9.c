@@ -4,7 +4,7 @@
 #include<conio.h>
 void main(){
 clrscr();
-int a,b,c;
+int a,b,c,Min;
 printf("Enter the first number:");
 scanf("%d",&a);
 printf("Enter the second number:");
@@ -12,12 +12,15 @@ scanf("%d",&b);
 printf("Enter the third number:");
 scanf("%d",&c);
 
-if(b>a&&c>a){
-    printf("Minimum number is %d",a);
-} else if(a>b&&c>b){
-    printf("Minimum number is %d",b);
-} else if(a>c&&b>c){
-    printf("Minimum number is %d",c);
+if(!(a==b&&b==c)){
+    if(b>=a&&c>=a){
+        Min=a;
+    } else if(a>=b&&c>=b){
+        Min=b;
+    } else if(a>=c&&b>=c){
+        Min=c;
+    } 
+    printf("The Number %d is Lowest",Min);
 } else{
     printf("All numbers are equal");
 }
